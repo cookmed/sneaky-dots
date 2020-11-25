@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Dots test</title>
+        
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/progress-bar.css">
+		
+		<script src="https://connect.facebook.net/en_US/fbinstant.6.3.js"></script>
+		<script>
+		FBInstant.initializeAsync()
+		.then(function(){
+			/*FBInstant.setLoadingProgress(50);*/
+			FBInstant.setLoadingProgress(100);
+			
+			FBInstant.startGameAsync()
+			  .then(function() {
+			  
+			  game.start();
+			});
+		});
+		// Once all assets are loaded, tells the SDK 
+		// to end loading view and start the game
+		
+		
+		
+		</script>
+    </head>
+    <body>
+        <input type="text"  id="progress" value="0" hidden>
+		<h1 id="dots-test">DOTS  TEST</h1>
+        <div id="level-form-container">
+            <form id="level-form" action="javascript:void()">
+				<h1 id="level-label"></h1> 
+                <!--<p style="font-weight: bold;">Choose your Level</p>
+                <input type="submit" id="decrease" value="decrease">-->
+                <input type="text" disabled value="6" id="level-input" hidden>
+                <!--<input type="submit" id="increase" value="increase">
+                <p style="margin-top: 5px;">- A normal human level is 6 !</p>-->
+                <p>- Click action button and try to guess how many dots did u see.</p>
+                <p>- A number then will appear showing u the correct number of dots.</p>
+                <div class="meter animate">
+                    <span style="width: 0;" id="myBar"><span></span></span>
+                </div>
+            </form>
+            
+            
+        </div>
+        
+        <div id="choose-form-container">
+            <form action="javascript:void()" id="action-form">
+                <input type="submit" id="action" value="Action" >
+            </form>
+            <form action="javascript:void()" id="choose-form" hidden>
+                <input type="submit" class="choose" id="choose-0" data-answer="0" value="">
+                <input type="submit" class="choose" id="choose-1" data-answer="1" value="">
+                <input type="submit" class="choose" id="choose-2" data-answer="2" value="">    
+            </form>
+        </div>
+        <canvas id="main-canvas" width="250px" height="250px"></canvas>
+        <script src="jquery.js"></script>
+        <script src="jcanvas.js"></script>
+        <script src="dots.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+canvas{
+    margin-left: 10px;
+    background-color: #e3f0e3;
+}
+#dots-test{
+    margin-left: 10px;
+	color: white;
+	text-align: center;
+	font-family: cursive;
+	font-weight: bold;
+}
+#level-form-container{
+    margin-bottom: 5px;
+}
+#level-form{
+    padding: 10px;
+    background-color: #e3e3e3;
+    text-align: left;
+}
+
+#choose-form-container{
+    width: 500px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#action-form{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+#action{
+    width: 100px;
+    height: 100px;
+    background-color: #f53;
+    color: #fff;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 1px 1px 5px #000;
+    top: 40px;
+    position: relative;
+}
+p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+}
+#choose-form{
+    position: fixed;
+    text-align: center;
+}
+.choose {
+    width: 100px;
+    height: 100px;
+    background-color: #5f3;
+    color: #000;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 40;
+    box-shadow: 1px 1px 5px #000;
+    margin: 10px;
+}
+body{
+    background-color: #232323;
+}
+#myProgress {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;    
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;    
+}
+#myBar {
+    width: 0%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(40, 230, 15);
+}
+#level-label {
+	text-align: center;
+    font-size: 48px;
+    margin: 0;
+    font-family: calibri;
+    color: rgb(238, 85, 25);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) ; ;
+}
